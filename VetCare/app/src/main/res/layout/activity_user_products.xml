@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".UserProducts">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarUserProducts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#D70D47A1"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="Products"
+        app:titleMarginStart="30dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/productsList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbarUserProducts">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+</RelativeLayout>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    android:layout_height="320dp"
+    android:orientation="vertical"
+    android:background="@drawable/shape"
+    android:layout_gravity="center"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/txtclose"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:textColor="@color/white"
+        android:text="X"
+        android:textStyle="bold"
+        android:layout_gravity="end"
+        android:gravity="center"
+        android:background="@drawable/ic_baseline_remove_circle_outline_24"/>
+
+    <TextView
+        android:id="@+id/txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/blue"
+        android:textSize="20dp"
+        android:text="Select Appointment Category"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:gravity="center">
+    </TextView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/homeAppointment"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            app:cardCornerRadius="15dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#1363B3"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginRight="25dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="Book Appointment (HOME)"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:textStyle="bold"></TextView>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/hospitalAppointment"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            app:cardCornerRadius="15dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#1363B3"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="75dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="Book Appointment (CLINIC)"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:textStyle="bold">
+
+                </TextView>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+</LinearLayout>

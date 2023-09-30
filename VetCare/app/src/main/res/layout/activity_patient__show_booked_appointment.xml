@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Patient_ShowBookedAppointmentActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarAppointment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#D70D47A1"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="Your Appointments"
+        app:titleMarginStart="30dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/show_Appointment_recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+</LinearLayout>

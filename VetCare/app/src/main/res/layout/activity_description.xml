@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DescriptionActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#D70D47A1"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="Description"
+        app:titleMarginStart="30dp" />
+
+
+    <ImageView
+        android:id="@+id/prodimageViewBuy"
+        android:layout_width="265dp"
+        android:layout_height="255dp"
+        android:layout_above="@+id/prodNametextViewBuy"
+        android:layout_below="@+id/toolbarDescription"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="70dp"
+        android:layout_marginBottom="-4dp"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/prodNametextViewBuy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/divider2"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginBottom="67dp"
+        android:paddingLeft="10dp"
+        android:text="Name"
+        android:textColor="#000"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/prodimageViewBuy" />
+
+    <TextView
+        android:id="@+id/prodPricetextViewBuy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/divider2"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="51dp"
+        android:layout_marginLeft="51dp"
+        android:layout_marginEnd="19dp"
+        android:layout_marginRight="19dp"
+        android:layout_marginBottom="34dp"
+        android:text="Price"
+        android:textColor="#000"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.774"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/prodNametextViewBuy" />
+
+    <TextView
+        android:id="@+id/prodWeighttextViewBuy"
+        android:layout_width="292dp"
+        android:layout_height="27dp"
+        android:layout_above="@+id/divider2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="-17dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginEnd="57dp"
+        android:layout_marginRight="57dp"
+        android:layout_marginBottom="-7dp"
+        android:layout_toEndOf="@+id/qtytextViewBuy"
+        android:text="Qty"
+        android:textColor="#000"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.774"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/prodNametextViewBuy" />
+
+    <TextView
+        android:id="@+id/rstextViewBuy"
+        android:layout_width="82dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/divider2"
+        android:layout_marginEnd="-75dp"
+        android:layout_marginRight="-75dp"
+        android:layout_marginBottom="34dp"
+        android:layout_toStartOf="@+id/prodPricetextViewBuy"
+        android:layout_toLeftOf="@+id/prodPricetextViewBuy"
+        android:paddingLeft="10dp"
+        android:text="Rs:"
+        android:textColor="#000"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/prodPricetextViewBuy"
+        app:layout_constraintEnd_toStartOf="@+id/prodPricetextViewBuy"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/prodNametextViewBuy"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_above="@+id/scrollView2"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="9dp"
+        android:layout_marginLeft="9dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginRight="13dp"
+        android:layout_marginBottom="5dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/qtytextViewBuy" />
+
+    <Button
+        android:id="@+id/addToCartbuttonBuy"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="9dp"
+        android:textColor="@color/white"
+        android:background="@drawable/blue_fill__rounded_color"
+        android:text="Add To Cart"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2" />
+
+
+    <com.cepheuen.elegantnumberbutton.view.ElegantNumberButton
+        android:id="@+id/qtyElegantNumberButton"
+        android:layout_width="127dp"
+        android:layout_height="37dp"
+        android:layout_above="@+id/scrollView2"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="19dp"
+        android:layout_marginBottom="18dp"
+        app:backGroundColor="@color/blue"
+        app:finalNumber="5"
+        app:initialNumber="1"
+        app:textColor="@color/white"
+        app:textSize="10dp" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="226dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="63dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/divider2"
+        app:layout_constraintTop_toBottomOf="@+id/divider2"
+        app:layout_constraintVertical_bias="0.496">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/DescriptiontextViewBuy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:paddingLeft="20dp"
+                android:text="Description :"
+                android:textColor="#000"
+                android:textSize="25dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/divider2" />
+
+            <TextView
+                android:id="@+id/prodDesctextViewBuy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/DescriptiontextViewBuy"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginBottom="61dp"
+                android:paddingLeft="20dp"
+                android:text="Description :"
+                android:textColor="#000"
+                android:textSize="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/DescriptiontextViewBuy" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/qtytextViewBuy"
+        android:layout_width="99dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rstextViewBuy"
+        android:layout_marginStart="-2dp"
+        android:layout_marginLeft="-2dp"
+        android:layout_marginTop="-29dp"
+        android:layout_marginBottom="-19dp"
+        android:padding="10dp"
+        android:text="Weight :"
+        android:textColor="#000"
+        android:textSize="18dp" />
+</RelativeLayout>
